@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <% include includes/header %>
+  </head>
+  <body>
+    <div class="header">
+      <div class="login_area">
+        <% if(session != null) { %>
+          <form id="logout" method="POST" action="api/logout">
+            <h3><%=session%>님 환영합니다!</h3>
+            <button type="submit" id="logout_btn">로그아웃</button>
+          </form>
+        <% }else {%>
+          <form id="login" method="POST" action="api/test">
+            <input type="text" placeholder="아이디입력" id="id" name="id">
+            <input type="password" placeholder="비밀번호 입력" id="pwd" name="pwd">
+            <button type="button" id="login_btn">로그인</button>
+          </form>
+        <% } %>
+      </div>
+    </div>    
+    <h1 id="test">a</h1>
+    <p></p>
+    <h2 id="test2">ddd</h2>
+
+    <script>
+      $(document).ready(function() {
+        $('#login_btn').on('click', function() {
+          const id = $('#id').val();
+          const pwd = $('#pwd').val();
+
+          if (id == '') {
+            alert('아이디를 입력해주세요.');
+            return;
+          }
+
+          if (pwd == '') {
+            alert('비밀번호를 입력해주세요');
+            return;
+          }
+          $('#login').submit();
+        }); //로그인버튼
+      });
+    </script>
+  </body>
+  <footer>
+    <% include ./includes/footer %>
+  </footer>
+</html>

@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <% include includes/header %>
+    </head>
+    <body>
+        <div class="container">
+            <form action="/join" id="reg_form" method="post">
+                <div class="join_form">
+                    <div class="join_row">
+                        <h3 class="join_title">아이디</h3>
+                        <span class="line">
+                            <input class="inputForm" type="text" name="id" id="id">
+                        </span>
+                    </div>
+                    <div class="join_row">
+                        <h3 class="join_title">비밀번호</h3>
+                        <span class="line">
+                            <input class="inputForm" type="password" name="pwd" id="pwd">
+                            <span style="position: absolute; right: 3; top: 12;"><img src="/images/pwd.png" style="width: 25px;"></span>
+                        </span>
+                    </div>    
+                    <div class="btn_area">
+                        <button id="submit" class="btn">
+                            <span>가입하기</span>
+                        </button>
+                    </div>                               
+                </div>
+            </form>
+        </div>
+
+        <script>
+            $('#submit').on('click', function() {
+                if ($('#id').val() === '') {
+                    alert('아이디를 입력해주세요');
+                    $('#id').focus();
+                    return false;
+                }
+
+                if ($('#pwd').val() === '') {
+                    alert('비밀번호를 입력해주세요');
+                    $('#pwd').focus();
+                    return false;
+                }
+                console.log(1);
+                $('#reg_form').submit();
+            });
+        </script>
+    </body>
+    
+</html>

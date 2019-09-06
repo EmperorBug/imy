@@ -1,0 +1,61 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF; text-decoration: none;
+}
+
+.header {
+  width: 100%; height: 50px; vertical-align: center; margin-bottom: 30px;
+}
+
+.header .login_area {
+  float: right;
+}
+
+.container {
+  margin: 0 auto;
+  width: 460px;
+}
+
+.join_form {
+  width: 100%;
+  overflow: hidden;
+}
+
+.join_title {
+  margin-bottom: 8px;
+}
+
+.line {
+  border: 1px solid #7799;
+  display: block;
+  position: relative;
+  padding: 10px 60px 10px 14px;
+}
+
+.inputForm {
+  border: none;
+  display: block;
+  position: relative;
+  line-height: 50px;
+  width: 100%;
+  height: 29px;
+  font-size: 15px;
+}
+
+.btn_area {
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: green;
+  font-weight: 500;
+  padding: 10 20;
+  color: white;
+  font-size: 15px;
+  border: 0;
+  cursor: pointer;
+}

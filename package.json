@@ -1,0 +1,35 @@
+{
+  "name": "nyang",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "build": "webpack",
+    "devserver" : "webpack-dev-server --inline --content-base ./views"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-session": "^1.16.1",
+    "http-errors": "~1.6.3",
+    "jquery": "^3.4.1",
+    "jsdom": "^15.1.1",
+    "morgan": "~1.9.1",
+    "mysql": "2.17.1",
+    "webpack-cli": "^3.3.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.34.0",
+    "webpack-dev-server": "^3.7.1"
+  }
+}
