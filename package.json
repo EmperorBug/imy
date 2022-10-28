@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "build": "webpack",
-    "devserver" : "webpack-dev-server --inline --content-base ./views"
+    "devserver": "webpack-dev-server --inline --content-base ./views"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -18,7 +18,8 @@
     "jsdom": "^15.1.1",
     "morgan": "~1.9.1",
     "mysql": "2.17.1",
-    "webpack-cli": "^3.3.4"
+    "webpack-cli": "^3.3.4",
+    "websocket-driver": "^0.7.4"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",

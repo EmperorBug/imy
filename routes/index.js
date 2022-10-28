@@ -51,6 +51,19 @@ router.post('/join', function(req, res) {
   connection.query(`INSERT INTO USER (ID, PASSWORD) VALUES ('${ID}', '${PASSWORD}')`);
   res.redirect('/');
 });
+
+//  api test
+router.get('/api/kanji', function (req,res) {
+  connection.query(`SELECT * FROM test`, (err, rows) => {
+    if (!err) {
+      console.log(rows);
+      res.json({data:rows});
+    }
+
+
+  })
+});
+
 //
 //  post는 req.body로 받음
 //
